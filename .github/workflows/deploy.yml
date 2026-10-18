@@ -29,6 +29,8 @@ jobs:
         run: |
           mkdir -p public
           unzip crelob_upload_folder.zip -d public
+          find public -name index.html
+      
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
